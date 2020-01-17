@@ -1,0 +1,146 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 341844,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setupLoginSteps()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login the app successfully as a candidate",
+        "description": "",
+        "id": "candidate-successful-login-feature;login-the-app-successfully-as-a-candidate",
+        "after": [
+          {
+            "result": {
+              "duration": 124843,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15111978538,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I fill \"5910000010\" as my telephone number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5910000010",
+                  "offset": 8
+                }
+              ],
+              "location": "LoginSteps.iFillAsMyTelephoneNumber(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32761733650,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click Giriş Yap button",
+            "match": {
+              "location": "LoginSteps.iClickGirişYapButton()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Candidate"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 211818,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setupLoginSteps()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login the app successfully as a candidate2",
+        "description": "",
+        "id": "candidate-successful-login-feature;login-the-app-successfully-as-a-candidate2",
+        "after": [
+          {
+            "result": {
+              "duration": 121665,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15766897191,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I fill \"9210564322\" as my telephone number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9210564322",
+                  "offset": 8
+                }
+              ],
+              "location": "LoginSteps.iFillAsMyTelephoneNumber(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33455741207,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click Giriş Yap button",
+            "match": {
+              "location": "LoginSteps.iClickGirişYapButton()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Candidate"
+          }
+        ]
+      }
+    ],
+    "name": "Candidate Successful Login Feature",
+    "description": "",
+    "id": "candidate-successful-login-feature",
+    "keyword": "Feature",
+    "uri": "src/test/java/tests/cucumber/features/LoginCandidate.feature"
+  }
+]
