@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="IsinOlsun-Android-Test-Suite" parallel="tests" thread-count="2">
+<suite name="SpiderApp_Test_Suite" parallel="tests" thread-count="3">
 
-    <!--SonyXperia_Settings-->
-     <test name="TestAndroid01">  			
+    
+     <test name="Samsung_GalaxyJ7Prime_Android_8.1.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Samsung_GalaxyJ7Prime_Android_8.1.0"/>
     <classes>
       <class name="tests.cucumber.tests.RunCucumberFeatures"/>
     </classes>
-    </test>  
+    </test> 
+	
+	
+   	<test name="Huawei_Honor9Lite_Android_9.0.0">  			
+	  <parameter name="type" value="phone"/>
+      <parameter name="deviceName" value="Huawei_Honor9Lite_Android_9.0.0"/>
+    <classes>
+      <class name="tests.cucumber.tests.RunCucumberFeatures"/>
+    </classes>
+  </test>  
 
-     <test name="TestAndroid02">  			
+   <!--  <test name="Xiaomi_RedmiY2_Android_8.1.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Xiaomi_RedmiY2_Android_8.1.0"/>
     <classes>
       <class name="tests.cucumber.tests.RunCucumberFeatures"/>
     </classes>
-  </test>  
+  </test> --> 
+ 
 
 </suite>

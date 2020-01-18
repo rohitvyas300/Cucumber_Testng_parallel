@@ -1,6 +1,6 @@
 Feature: Candidate Successful Login Feature
 
-	@Candidate	
+	#@Candidate	
   Scenario: Login the app successfully as a candidate
     Given I fill "5910000010" as my telephone number
     When I click Giriş Yap button
