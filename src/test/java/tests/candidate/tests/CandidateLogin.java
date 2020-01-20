@@ -18,9 +18,9 @@ public class CandidateLogin extends BaseTest {
     @Test
     public void candidateLogin_Successful () throws InterruptedException {
         loginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-        profileLoginScreen = new CandidateLoginScreen(ThreadLocalDriver.getTLDriver());
-        passCodeScreen = new PassCodeScreen(ThreadLocalDriver.getTLDriver());
-        myProfileScreen = new MyProfileScreen(ThreadLocalDriver.getTLDriver());
+       // profileLoginScreen = new CandidateLoginScreen(ThreadLocalDriver.getTLDriver());
+        //passCodeScreen = new PassCodeScreen(ThreadLocalDriver.getTLDriver());
+        //myProfileScreen = new MyProfileScreen(ThreadLocalDriver.getTLDriver());
 
         splashScreen.skipSplashScreen();
         tutorialScreen.skipTutorial();

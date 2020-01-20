@@ -1,11 +1,12 @@
 package screens;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 
 public class LoginScreen extends BaseScreen {
-    public LoginScreen(AndroidDriver driver) {
+    public LoginScreen(AppiumDriver driver) {
         super(driver);
     }
 
@@ -19,16 +20,19 @@ public class LoginScreen extends BaseScreen {
 
 
     public void enterPhoneNumber (String cellPhoneNumber) {
-        //sendText(By.id(telephoneNumber), cellPhoneNumber);
+        
+    	System.out.println("inside ... enterPhoneNumber");
     	waitAndClick(By.id(allowbtn));
     	sendText(By.xpath(EnterNumberfield), cellPhoneNumber);
-        //hideKeyboard();
+        
     }
 
     public void clickLogin () throws InterruptedException {
-        //waitAndClick(By.id(loginButton));
+    	System.out.println("inside .... click login...");
+    	
     	waitAndClick(By.xpath(termsandcondiion));
     	Thread.sleep(30000);
+    	
     	//appReset();
     
     }

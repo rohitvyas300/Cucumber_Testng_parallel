@@ -25,10 +25,10 @@ public class LoginSteps extends BaseSteps {
     public void setupLoginSteps () {
         System.out.println("Cucumber Before-login-test-cucumber");
         setupCucumber();
-        profileLoginScreen = new CandidateLoginScreen(ThreadLocalDriver.getTLDriver());
+       // profileLoginScreen = new CandidateLoginScreen(ThreadLocalDriver.getTLDriver());
         loginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-        passCodeScreen = new PassCodeScreen(ThreadLocalDriver.getTLDriver());
-        myProfileScreen = new MyProfileScreen(ThreadLocalDriver.getTLDriver());
+        //passCodeScreen = new PassCodeScreen(ThreadLocalDriver.getTLDriver());
+        //myProfileScreen = new MyProfileScreen(ThreadLocalDriver.getTLDriver());
     }
 
     @Given("^I have skipped Splash and Tutorial pages and I am on the job selection pages$")

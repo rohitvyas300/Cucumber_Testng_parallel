@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SpiderApp_Test_Suite">
-              <span class="suite-name border-skipped">SpiderApp_Test_Suite</span>
+              <span class="suite-name border-passed">SpiderApp_Test_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-SpiderApp_Test_Suite" class="hide-methods skipped suite-SpiderApp_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-SpiderApp_Test_Suite -->
-                      <a href="#" panel-name="suite-SpiderApp_Test_Suite" class="show-methods skipped suite-SpiderApp_Test_Suite"> (show)</a> <!-- show-methods skipped suite-SpiderApp_Test_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-SpiderApp_Test_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SpiderApp_Test_Suite" title="tests.cucumber.tests.RunCucumberFeatures" hash-for-method="scenario">scenario</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-SpiderApp_Test_Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-SpiderApp_Test_Suite" class="show-methods passed suite-SpiderApp_Test_Suite"> (show)</a> <!-- show-methods passed suite-SpiderApp_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-SpiderApp_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SpiderApp_Test_Suite" title="tests.cucumber.tests.RunCucumberFeatures" hash-for-method="scenario(&quot;Login the app successfully as a candidate2&quot;, &quot;Candidate Successful Login Feature&quot;)">scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SpiderApp_Test_Suite" title="tests.cucumber.tests.RunCucumberFeatures" hash-for-method="scenario(&quot;Login the app successfully as a candidate2&quot;, &quot;Candidate Successful Login Feature&quot;)">scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</a> <!-- method navigator-link -->
@@ -131,69 +122,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SpiderApp_Test_Suite" class="panel SpiderApp_Test_Suite">
-          <div class="suite-SpiderApp_Test_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">tests.cucumber.tests.RunCucumberFeatures</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="scenario">
-                  </a> <!-- scenario -->
-                  <span class="method-name">scenario</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Appium Server Error due to some reason please check Hub/AppiumStdErr logs for more Information (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38.66 seconds
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;Macs-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: driver.version: AndroidDriver
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at tests.BaseTest.setup(BaseTest.java:59)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs LoginCandiate Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SpiderApp_Test_Suite-class-skipped -->
           <div class="suite-SpiderApp_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.cucumber.tests.RunCucumberFeatures</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="scenario(&quot;Login the app successfully as a candidate2&quot;, &quot;Candidate Successful Login Feature&quot;)">
+                  </a> <!-- scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature") -->
+                  <span class="method-name">scenario</span>
+                  <span class="parameters">("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</span>
+                  <em>
+(Runs LoginCandiate Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="scenario(&quot;Login the app successfully as a candidate2&quot;, &quot;Candidate Successful Login Feature&quot;)">
@@ -282,16 +226,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'scenario')
 data.setCell(0, 2, 'tests.cucumber.tests.RunCucumberFeatures')
-data.setCell(0, 3, 43103);
+data.setCell(0, 3, 48810);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'scenario')
 data.setCell(1, 2, 'tests.cucumber.tests.RunCucumberFeatures')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 44324);
 window.suiteTableData['SpiderApp_Test_Suite']= { tableData: data, tableDiv: 'times-div-SpiderApp_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SpiderApp_Test_Suite">
               </div> <!-- times-div-SpiderApp_Test_Suite -->
             </div> <!-- times-div -->
@@ -302,13 +246,6 @@ return data;
             <span class="header-content">Reporter output for SpiderApp_Test_Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">I fill &quot;9210564322&quot; as my telephone number (PASSED : 10s)</div></span>
-                <span class="reporter-method-output"><div "result">I click Giriş Yap button (PASSED : 32s)</div></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SpiderApp_Test_Suite" class="panel">
@@ -331,42 +268,40 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setup(Samsung_GalaxyJ7Prime_Android_8.1.0)</span>
-                <span class="method-start">452 ms</span>
+                <span class="method-name">setup(Huawei_Honor9Lite_Android_9.0.0)</span>
+                <span class="method-start">220 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup(Huawei_Honor9Lite_Android_9.0.0)</span>
-                <span class="method-start">453 ms</span>
+                <span class="method-name">setup(Samsung_GalaxyJ7Prime_Android_8.1.0)</span>
+                <span class="method-start">220 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">40198 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="test-method">
                 <span class="method-name">scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</span>
-                <span class="method-start">79550 ms</span>
+                <span class="method-start">77441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scenario("Login the app successfully as a candidate2", "Candidate Successful Login Feature")</span>
+                <span class="method-start">79232 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">122655 ms</span>
+                <span class="method-start">123561 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">123909 ms</span>
+                <span class="method-start">125358 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">aftersuite</span>
-                <span class="method-start">123931 ms</span>
-              </div> <!-- configuration-suite after -->
-              <div class="test-method">
-                <span class="method-name">scenario</span>
-                <span class="method-start">-1579333592028 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">126253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">128174 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

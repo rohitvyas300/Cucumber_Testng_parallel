@@ -57,14 +57,17 @@ public class BaseTest {
 			   capabilities.setCapability("systemPort", new Random().nextInt(100)+1024);
 			  capabilities.setCapability("automationName", "UiAutomator2");	 	  
         ThreadLocalDriver.setTLDriver(new AndroidDriver<WebElement>(new URL("https://qkm1vil.qualitykiosk.com/appiumcloud/wd/hub"), capabilities));
+        
         wait = new WebDriverWait(ThreadLocalDriver.getTLDriver(), 10);
+       
+  
 
         //Base Screen Initialization
         LoginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-        splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
-        tutorialScreen = new TutorialScreen(ThreadLocalDriver.getTLDriver());
-        selectionScreen = new SelectionScreen(ThreadLocalDriver.getTLDriver());
-        candidateMainScreen = new CandidateMainScreen(ThreadLocalDriver.getTLDriver());
+       // splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
+        //tutorialScreen = new TutorialScreen(ThreadLocalDriver.getTLDriver());
+        //selectionScreen = new SelectionScreen(ThreadLocalDriver.getTLDriver());
+        //candidateMainScreen = new CandidateMainScreen(ThreadLocalDriver.getTLDriver());
     }
 
     @AfterMethod

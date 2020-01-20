@@ -8,8 +8,7 @@
       <class name="tests.cucumber.tests.RunCucumberFeatures">
         <methods>
           <include name="tearDownClass"/>
-          <include name="scenario"/>
-          <include name="aftersuite"/>
+          <include name="scenario" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="setUpClass"/>
@@ -17,4 +16,19 @@
       </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
     </classes>
   </test> <!-- Huawei_Honor9Lite_Android_9.0.0(failed) -->
+  <test thread-count="3" name="Samsung_GalaxyJ7Prime_Android_8.1.0(failed)" parallel="tests">
+    <parameter name="type" value="phone"/>
+    <parameter name="deviceName" value="Samsung_GalaxyJ7Prime_Android_8.1.0"/>
+    <classes>
+      <class name="tests.cucumber.tests.RunCucumberFeatures">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Samsung_GalaxyJ7Prime_Android_8.1.0(failed) -->
 </suite> <!-- Failed suite [SpiderApp_Test_Suite] -->

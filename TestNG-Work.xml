@@ -21,13 +21,13 @@
     </classes>
   </test>  
 
-   <!--  <test name="Xiaomi_RedmiY2_Android_8.1.0">  			
+    <!-- re <test name="Xiaomi_RedmiY2_Android_8.1.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Xiaomi_RedmiY2_Android_8.1.0"/>
     <classes>
       <class name="tests.cucumber.tests.RunCucumberFeatures"/>
     </classes>
-  </test> --> 
+  </test> -->
  
 
 </suite>
