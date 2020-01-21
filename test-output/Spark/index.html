@@ -58,7 +58,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jan 20, 2020 04:11:38 PM</span>
+                    <span class="badge badge-primary">Jan 21, 2020 01:57:36 PM</span>
                 </a>
             </li>
         </ul>
@@ -80,6 +80,14 @@
             <i class="fa fa-tag"></i>
           </span>
           <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
         </a>
       </li>
       <li class="nav-item dropdown">
@@ -112,7 +120,7 @@
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
                                             <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
@@ -126,38 +134,38 @@
                                             <i class="fa fa-tag"></i>
                                         </a>
                                         <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-                                                <a class="dropdown-item" href="#">@Candidate</a>
+                                                <a class="dropdown-item" href="#">@login</a>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-                                    <li class="test-item"  status="pass" test-id="1"
+                                    <li class="test-item"  status="fail" test-id="1"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">Candidate Successful Login Feature</p> 
-                                                <p class="duration text-sm">0h 0m 45s+708ms</p> 
-                                                <span class="datetime">16:11:38 PM</span>
+                                                <p class="name">Login Screen</p> 
+                                                <p class="duration text-sm">0h 1m 57s+468ms</p> 
+                                                <span class="datetime">13:57:37 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">Candidate Successful Login Feature</h5>
-                                                        <span class='badge badge-success'>01.20.2020 16:11:38</span>
-                                                        <span class='badge badge-danger'>01.20.2020 16:12:23</span>
-                                                        <span class='badge badge-default'>0h 0m 45s+708ms</span>
+                                                        <h5 class="test-status text-fail">Login Screen</h5>
+                                                        <span class='badge badge-success'>01.21.2020 13:57:37</span>
+                                                        <span class='badge badge-danger'>01.21.2020 13:59:34</span>
+                                                        <span class='badge badge-default'>0h 1m 57s+468ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
-                                                        
+                                                        Description: The purpose of this feature is to test the login functionality
                                                     </div>
                                                 </div>
                                             </div>
@@ -166,7 +174,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">Login the app successfully as a candidate2</div>
+				<div class="node">Verify cross number error message</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -181,25 +189,25 @@
 								<span>LoginSteps.setupLoginSteps()</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.iFillAsMyTelephoneNumber(String)">
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Given I fill "9210564322" as my telephone number</span>
+								<span>When I am on login screen</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.iClickGirişYapButton()">
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When I click Giriş Yap button</span>
+								<span>And I enter "8983112334" number</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>LoginSteps.teardown()</span>
+								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
 							</div>
 				<div class="details"></div>
 					</div>
@@ -208,7 +216,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">Login the app successfully as a candidate2</div>
+				<div class="node">Verify cross number error message</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -223,27 +231,219 @@
 								<span>LoginSteps.setupLoginSteps()</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.iFillAsMyTelephoneNumber(String)">
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Given I fill "9210564322" as my telephone number</span>
+								<span>When I am on login screen</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.iClickGirişYapButton()">
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When I click Giriş Yap button</span>
+								<span>And I enter "8983112334" number</span>
 							</div>
 				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">Verify cross number error message</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>LoginSteps.teardown()</span>
+								<span>LoginSteps.setupLoginSteps()</span>
 							</div>
 				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When I am on login screen</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And I enter "8983112334" number</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>LoginSteps.setupLoginSteps()</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When I am on login screen</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And I enter "8983112334" number</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then User should click on cancel icon and verify textbox is empty</span>
+							</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>LoginSteps.setupLoginSteps()</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When I am on login screen</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And I enter "8983112334" number</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then User should click on cancel icon and verify textbox is empty</span>
+							</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>LoginSteps.setupLoginSteps()</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When I am on login screen</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And I enter "8983112334" number</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Then User should click on cancel icon and verify textbox is empty</span>
+							</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea>
 					</div>
 				</div>
 	</div>

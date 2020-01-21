@@ -1,64 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SpiderApp_Test_Suite" duration-ms="128470" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:42:28Z">
+  <suite name="SpiderApp_Test_Suite" duration-ms="193530" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:29:38Z">
     <groups>
       <group name="cucumber">
         <method signature="RunCucumberFeatures.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="scenario" class="tests.cucumber.tests.RunCucumberFeatures"/>
         <method signature="RunCucumberFeatures.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="scenario" class="tests.cucumber.tests.RunCucumberFeatures"/>
+        <method signature="RunCucumberFeatures.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="scenario" class="tests.cucumber.tests.RunCucumberFeatures"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Samsung_GalaxyJ7Prime_Android_8.1.0" duration-ms="126265" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:42:26Z">
+    <test name="Huawei_Honor9Lite_Android_9.0.0" duration-ms="129936" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:28:35Z">
       <class name="tests.cucumber.tests.RunCucumberFeatures">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="setUpClass" is-config="true" duration-ms="168" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:40:20Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="setUpClass" is-config="true" duration-ms="203" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:26:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="setup" is-config="true" duration-ms="79012" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:41:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Samsung_GalaxyJ7Prime_Android_8.1.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="scenario" duration-ms="44324" started-at="2020-01-20T10:41:39Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-20T10:42:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login the app successfully as a candidate2"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Candidate Successful Login Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="teardown" is-config="true" duration-ms="1796" started-at="2020-01-20T10:42:23Z" finished-at="2020-01-20T10:42:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="tearDownClass" is-config="true" duration-ms="889" started-at="2020-01-20T10:42:25Z" finished-at="2020-01-20T10:42:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
-    </test> <!-- Samsung_GalaxyJ7Prime_Android_8.1.0 -->
-    <test name="Huawei_Honor9Lite_Android_9.0.0" duration-ms="128470" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:42:28Z">
-      <class name="tests.cucumber.tests.RunCucumberFeatures">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="setUpClass" is-config="true" duration-ms="171" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:40:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="setup" is-config="true" duration-ms="77221" started-at="2020-01-20T10:40:20Z" finished-at="2020-01-20T10:41:37Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="setup" is-config="true" duration-ms="71249" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:27:36Z">
           <params>
             <param index="0">
               <value>
@@ -69,31 +27,258 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="scenario" duration-ms="48810" started-at="2020-01-20T10:41:37Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-20T10:42:26Z">
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="scenario" duration-ms="16729" started-at="2020-01-21T08:27:36Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:27:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login the app successfully as a candidate2"]]>
+                <![CDATA["Verify cross number error message"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Candidate Successful Login Feature"]]>
+                <![CDATA["Login Screen"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenario -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="teardown" is-config="true" duration-ms="1921" started-at="2020-01-20T10:42:26Z" finished-at="2020-01-20T10:42:28Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="teardown" is-config="true" duration-ms="1725" started-at="2020-01-21T08:27:53Z" finished-at="2020-01-21T08:27:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="tearDownClass" is-config="true" duration-ms="282" started-at="2020-01-20T10:42:28Z" finished-at="2020-01-20T10:42:28Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="setup" is-config="true" duration-ms="18878" started-at="2020-01-21T08:27:55Z" finished-at="2020-01-21T08:28:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Huawei_Honor9Lite_Android_9.0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="scenario" duration-ms="18987" started-at="2020-01-21T08:28:13Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:28:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if there is a cross icon available to erase the entered text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="teardown" is-config="true" duration-ms="1232" started-at="2020-01-21T08:28:32Z" finished-at="2020-01-21T08:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@1f36e637]" name="tearDownClass" is-config="true" duration-ms="832" started-at="2020-01-21T08:28:34Z" finished-at="2020-01-21T08:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
     </test> <!-- Huawei_Honor9Lite_Android_9.0.0 -->
+    <test name="Samsung_GalaxyJ7Prime_Android_8.1.0" duration-ms="151309" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:28:56Z">
+      <class name="tests.cucumber.tests.RunCucumberFeatures">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="setUpClass" is-config="true" duration-ms="203" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="setup" is-config="true" duration-ms="89900" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung_GalaxyJ7Prime_Android_8.1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="scenario" duration-ms="16125" started-at="2020-01-21T08:27:55Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:28:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify cross number error message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="teardown" is-config="true" duration-ms="1381" started-at="2020-01-21T08:28:11Z" finished-at="2020-01-21T08:28:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="setup" is-config="true" duration-ms="21746" started-at="2020-01-21T08:28:12Z" finished-at="2020-01-21T08:28:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung_GalaxyJ7Prime_Android_8.1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="scenario" duration-ms="19880" started-at="2020-01-21T08:28:34Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:28:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if there is a cross icon available to erase the entered text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="teardown" is-config="true" duration-ms="1584" started-at="2020-01-21T08:28:54Z" finished-at="2020-01-21T08:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@6c3708b3]" name="tearDownClass" is-config="true" duration-ms="395" started-at="2020-01-21T08:28:56Z" finished-at="2020-01-21T08:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
+    </test> <!-- Samsung_GalaxyJ7Prime_Android_8.1.0 -->
+    <test name="Xiaomi_RedmiY2_Android_8.1.0" duration-ms="193530" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:29:38Z">
+      <class name="tests.cucumber.tests.RunCucumberFeatures">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="setUpClass" is-config="true" duration-ms="203" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="setup" is-config="true" duration-ms="103843" started-at="2020-01-21T08:26:25Z" finished-at="2020-01-21T08:28:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xiaomi_RedmiY2_Android_8.1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="scenario" duration-ms="28307" started-at="2020-01-21T08:28:09Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:28:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify cross number error message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="teardown" is-config="true" duration-ms="1647" started-at="2020-01-21T08:28:37Z" finished-at="2020-01-21T08:28:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="setup" is-config="true" duration-ms="23280" started-at="2020-01-21T08:28:39Z" finished-at="2020-01-21T08:29:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xiaomi_RedmiY2_Android_8.1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="scenario" duration-ms="32318" started-at="2020-01-21T08:29:02Z" description="Runs LoginCandiate Feature" data-provider="scenarios" finished-at="2020-01-21T08:29:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if there is a cross icon available to erase the entered text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Screen"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="teardown" is-config="true" duration-ms="3517" started-at="2020-01-21T08:29:34Z" finished-at="2020-01-21T08:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.cucumber.tests.RunCucumberFeatures@50b494a6]" name="tearDownClass" is-config="true" duration-ms="320" started-at="2020-01-21T08:29:38Z" finished-at="2020-01-21T08:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
+    </test> <!-- Xiaomi_RedmiY2_Android_8.1.0 -->
   </suite> <!-- SpiderApp_Test_Suite -->
 </testng-results>

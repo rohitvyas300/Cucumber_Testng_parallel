@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Samsung_GalaxyJ7Prime_Android_8.1.0</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 20 16:10:20 IST 2020</td>
+<td>Started on:</td><td>Tue Jan 21 13:56:25 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>126 seconds (126265 ms)</td>
+<tr><td>Total time:</td><td>151 seconds (151309 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,32 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.cucumber.tests.RunCucumberFeatures.scenario()'><b>scenario</b><br>Test class: tests.cucumber.tests.RunCucumberFeatures<br>Test method: Runs LoginCandiate Feature<br>Parameters: "Verify if there is a cross icon available to erase the entered text", "Login Screen"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1743746634", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1743746634'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</pre></div></td>
+<td>19</td>
+<td>tests.cucumber.tests.RunCucumberFeatures@6c3708b3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,9 +101,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.cucumber.tests.RunCucumberFeatures.scenario()'><b>scenario</b><br>Test class: tests.cucumber.tests.RunCucumberFeatures<br>Test method: Runs LoginCandiate Feature<br>Parameters: "Login the app successfully as a candidate2", "Candidate Successful Login Feature"</td>
+<td title='tests.cucumber.tests.RunCucumberFeatures.scenario()'><b>scenario</b><br>Test class: tests.cucumber.tests.RunCucumberFeatures<br>Test method: Runs LoginCandiate Feature<br>Parameters: "Verify cross number error message", "Login Screen"</td>
 <td></td>
-<td>44</td>
+<td>16</td>
 <td>tests.cucumber.tests.RunCucumberFeatures@6c3708b3</td></tr>
 </table><p>
 </body>

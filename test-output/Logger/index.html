@@ -55,6 +55,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -99,7 +107,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -116,7 +124,7 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Candidate</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@login</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -133,35 +141,35 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:38</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Candidate Successful Login Feature] started</span>
+												<span class="tt">01.21.2020 13:57:37</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Login Screen] started</span>
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@Candidate"
+												tags="@login"
 												devices="">
-												<span class="tt">01.20.2020 16:11:38</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Login the app successfully as a candidate2] started</span>
+												<span class="tn">|---[Verify cross number error message] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Candidate</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
 												</span>
 												
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:38</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:11:38</span>&nbsp;
+													<span class="tt">01.21.2020 13:57:37</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
 													
@@ -171,14 +179,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:38</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I fill "9210564322" as my telephone number] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:11:53</span>&nbsp;
+													<span class="tt">01.21.2020 13:57:48</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I fill "9210564322" as my telephone number]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -186,14 +194,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:53</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:48</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click Giriş Yap button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:12:26</span>&nbsp;
+													<span class="tt">01.21.2020 13:57:50</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click Giriş Yap button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -201,38 +209,38 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:12:26</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:50</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.teardown()] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:12:26</span>&nbsp;
+													<span class="tt">01.21.2020 13:57:53</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.teardown()]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
 											<div class="st pass test l1" 
-												tags="@Candidate"
+												tags="@login"
 												devices="">
-												<span class="tt">01.20.2020 16:11:39</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Login the app successfully as a candidate2] started</span>
+												<span class="tn">|---[Verify cross number error message] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Candidate</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
 												</span>
 												
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:39</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:11:39</span>&nbsp;
+													<span class="tt">01.21.2020 13:57:55</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
 													
@@ -242,14 +250,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:39</span>&nbsp;
+												<span class="tt">01.21.2020 13:57:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I fill "9210564322" as my telephone number] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:11:52</span>&nbsp;
+													<span class="tt">01.21.2020 13:58:06</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I fill "9210564322" as my telephone number]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -257,14 +265,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:11:52</span>&nbsp;
+												<span class="tt">01.21.2020 13:58:06</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click Giriş Yap button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:12:23</span>&nbsp;
+													<span class="tt">01.21.2020 13:58:09</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click Giriş Yap button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -272,16 +280,324 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.20.2020 16:12:23</span>&nbsp;
+												<span class="tt">01.21.2020 13:58:09</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.teardown()] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.20.2020 16:12:23</span>&nbsp;
+													<span class="tt">01.21.2020 13:58:11</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.teardown()]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number]</span>
 													
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@login"
+												devices="">
+												<span class="tt">01.21.2020 13:58:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify cross number error message] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:09</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:28</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:37</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Alert popup should be disaply as Please enter a valid Idea number]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@login"
+												devices="">
+												<span class="tt">01.21.2020 13:58:13</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify if there is a cross icon available to erase the entered text] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:13</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:13</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:13</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:29</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty] started</span>
+												
+												<div class="st fail">
+													<span class="tt">01.21.2020 13:58:32</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@login"
+												devices="">
+												<span class="tt">01.21.2020 13:58:35</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify if there is a cross icon available to erase the entered text] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:35</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:58:51</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:58:51</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty] started</span>
+												
+												<div class="st fail">
+													<span class="tt">01.21.2020 13:58:54</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st fail test l1" 
+												tags="@login"
+												devices="">
+												<span class="tt">01.21.2020 13:59:02</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify if there is a cross icon available to erase the entered text] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @login</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:59:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:59:02</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[LoginSteps.setupLoginSteps()]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:59:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:59:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I am on login screen]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:59:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number] started</span>
+												
+												<div class="st pass">
+													<span class="tt">01.21.2020 13:59:30</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I enter "8983112334" number]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">01.21.2020 13:59:30</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty] started</span>
+												
+												<div class="st fail">
+													<span class="tt">01.21.2020 13:59:34</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User should click on cancel icon and verify textbox is empty]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
+	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:80)
+	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
+</textarea></span>
 												</div>
 											</div>
 											</div>

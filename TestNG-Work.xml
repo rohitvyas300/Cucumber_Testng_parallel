@@ -13,7 +13,7 @@
     </test> 
 	
 	
-   	<test name="Huawei_Honor9Lite_Android_9.0.0">  			
+     <test name="Huawei_Honor9Lite_Android_9.0.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Huawei_Honor9Lite_Android_9.0.0"/>
     <classes>
@@ -21,13 +21,12 @@
     </classes>
   </test>  
 
-    <!-- re <test name="Xiaomi_RedmiY2_Android_8.1.0">  			
+   <test name="Xiaomi_RedmiY2_Android_8.1.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Xiaomi_RedmiY2_Android_8.1.0"/>
     <classes>
       <class name="tests.cucumber.tests.RunCucumberFeatures"/>
     </classes>
-  </test> -->
- 
+  </test> 
 
 </suite>

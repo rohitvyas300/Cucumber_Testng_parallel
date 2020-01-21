@@ -1,4 +1,4 @@
-package tests.cucumber.tests;
+package tests.cucumber.Runner;
 
 
 import java.io.File;
@@ -24,9 +24,8 @@ import tests.BaseTest;
 
 @CucumberOptions(
 		 monochrome = true,  
-        tags = "@login",
-        //features = "src/test/java/tests/cucumber/features/LoginCandidate.feature",
-        		features = "src/test/java/tests/cucumber/features",
+        tags = "@Candidate",
+        features = "src/test/java/tests/cucumber/features/LoginCandidate.feature",
         glue = "tests.cucumber.steps",        
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/html/ExtentReport.html"}        		       
                 )
