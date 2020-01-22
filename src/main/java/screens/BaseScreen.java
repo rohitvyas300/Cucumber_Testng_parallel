@@ -1,5 +1,6 @@
 package screens;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -11,12 +12,12 @@ import org.testng.Assert;
 
 public class BaseScreen {
 
-    protected AndroidDriver driver;
+    protected AppiumDriver driver;
     protected WebDriverWait wait;
 
-    public BaseScreen (AndroidDriver driver){
+    public BaseScreen (AppiumDriver driver){
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
     }
 
     protected void waitAndClick (By by) {

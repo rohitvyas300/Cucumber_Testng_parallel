@@ -1,9 +1,8 @@
 	package tests;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
+import java.io.IOException;
+import java.net.URL;
+import java.util.Random;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -11,26 +10,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import screens.CandidateMainScreen;
-import screens.LoginScreen;
-import screens.SelectionScreen;
-import screens.SplashScreen;
-import screens.TutorialScreen;
 
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Random;
+import io.appium.java_client.android.AndroidDriver;
+import screens.LoginScreen;
 
 public class BaseTest {
 
     public WebDriverWait wait;
     //private ThreadLocalDriver threadLocalDriver = new ThreadLocalDriver();
-    //Base Screens for all cases
-    protected SplashScreen splashScreen = null;
-    protected TutorialScreen tutorialScreen = null;
-    protected SelectionScreen selectionScreen = null;
-    protected CandidateMainScreen candidateMainScreen = null;
+    //Base Screens for all cases    
+    //protected CandidateMainScreen candidateMainScreen = null;
     protected LoginScreen LoginScreen = null;
 
     @BeforeMethod
@@ -57,14 +46,12 @@ public class BaseTest {
 			   capabilities.setCapability("systemPort", new Random().nextInt(100)+1024);
 			  capabilities.setCapability("automationName", "UiAutomator2");	 	  
         ThreadLocalDriver.setTLDriver(new AndroidDriver<WebElement>(new URL("https://qkm1vil.qualitykiosk.com/appiumcloud/wd/hub"), capabilities));
+        
         wait = new WebDriverWait(ThreadLocalDriver.getTLDriver(), 10);
-
+       
         //Base Screen Initialization
         LoginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-        splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
-        tutorialScreen = new TutorialScreen(ThreadLocalDriver.getTLDriver());
-        selectionScreen = new SelectionScreen(ThreadLocalDriver.getTLDriver());
-        candidateMainScreen = new CandidateMainScreen(ThreadLocalDriver.getTLDriver());
+       // splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());        
     }
 
     @AfterMethod
@@ -73,4 +60,4 @@ public class BaseTest {
         ThreadLocalDriver.getTLDriver().quit();
     }
 
-}
+}//EOD class
