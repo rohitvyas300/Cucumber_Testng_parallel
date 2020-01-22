@@ -17,7 +17,7 @@ public class BaseScreen {
 
     public BaseScreen (AppiumDriver driver){
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
     }
 
     protected void waitAndClick (By by) {

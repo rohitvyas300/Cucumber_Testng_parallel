@@ -1,49 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [SpiderApp_Test_Suite]" parallel="tests">
-  <test thread-count="3" name="Samsung_GalaxyJ7Prime_Android_8.1.0(failed)" parallel="tests">
-    <parameter name="type" value="phone"/>
-    <parameter name="deviceName" value="Samsung_GalaxyJ7Prime_Android_8.1.0"/>
-    <classes>
-      <class name="tests.cucumber.tests.RunCucumberFeatures">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="scenario" invocation-numbers="1"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
-    </classes>
-  </test> <!-- Samsung_GalaxyJ7Prime_Android_8.1.0(failed) -->
   <test thread-count="3" name="Huawei_Honor9Lite_Android_9.0.0(failed)" parallel="tests">
     <parameter name="type" value="phone"/>
     <parameter name="deviceName" value="Huawei_Honor9Lite_Android_9.0.0"/>
     <classes>
-      <class name="tests.cucumber.tests.RunCucumberFeatures">
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
         <methods>
-          <include name="tearDownClass"/>
-          <include name="scenario" invocation-numbers="1"/>
-          <include name="teardown"/>
-          <include name="setup"/>
           <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
     </classes>
   </test> <!-- Huawei_Honor9Lite_Android_9.0.0(failed) -->
   <test thread-count="3" name="Xiaomi_RedmiY2_Android_8.1.0(failed)" parallel="tests">
     <parameter name="type" value="phone"/>
     <parameter name="deviceName" value="Xiaomi_RedmiY2_Android_8.1.0"/>
     <classes>
-      <class name="tests.cucumber.tests.RunCucumberFeatures">
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
         <methods>
-          <include name="tearDownClass"/>
-          <include name="scenario" invocation-numbers="1"/>
-          <include name="teardown"/>
-          <include name="setup"/>
           <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0 2"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tests.cucumber.tests.RunCucumberFeatures -->
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
     </classes>
   </test> <!-- Xiaomi_RedmiY2_Android_8.1.0(failed) -->
+  <test thread-count="3" name="Samsung_GalaxyJ7Prime_Android_8.1.0(failed)" parallel="tests">
+    <parameter name="type" value="phone"/>
+    <parameter name="deviceName" value="Samsung_GalaxyJ7Prime_Android_8.1.0"/>
+    <classes>
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0 2"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Samsung_GalaxyJ7Prime_Android_8.1.0(failed) -->
+  <test thread-count="3" name="Samsung_GalaxyS10_Android_9.0.0(failed)" parallel="tests">
+    <parameter name="type" value="phone"/>
+    <parameter name="deviceName" value="Samsung_GalaxyS10_Android_9.0.0"/>
+    <classes>
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Samsung_GalaxyS10_Android_9.0.0(failed) -->
+  <test thread-count="3" name="Huawei_Honor8X_Android_9.0.0(failed)" parallel="tests">
+    <parameter name="type" value="phone"/>
+    <parameter name="deviceName" value="Huawei_Honor8X_Android_9.0.0"/>
+    <classes>
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0 2"/>
+          <include name="tearDownClass"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Huawei_Honor8X_Android_9.0.0(failed) -->
 </suite> <!-- Failed suite [SpiderApp_Test_Suite] -->

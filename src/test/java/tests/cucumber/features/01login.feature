@@ -4,10 +4,10 @@ Description: The purpose of this feature is to test the login functionality
 @login
 Scenario: Verify cross number error message
        When I am on login screen
-       And I enter "8983112334" number
+       And I enter "798311232" number
        Then Alert popup should be disaply as Please enter a valid Idea number
  
-@login11
+@login
 Scenario: Verify login functionality with blank text
 	When I am on login screen
      And I click on Enter Number textbox

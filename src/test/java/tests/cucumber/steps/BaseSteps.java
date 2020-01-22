@@ -7,11 +7,7 @@ import screens.*;
 import tests.ThreadLocalDriver;
 
 public class BaseSteps {
-
-    protected SplashScreen splashScreen = null;
-    protected TutorialScreen tutorialScreen = null;
-    protected SelectionScreen selectionScreen = null;
-    protected CandidateMainScreen candidateMainScreen = null;
+    //protected CandidateMainScreen candidateMainScreen = null;
     protected LoginScreen LoginScreen = null;
     protected WebDriverWait wait;
 
@@ -20,10 +16,7 @@ public class BaseSteps {
         System.out.println("Cucumber Base Test Before-login-test-cucumber");
         wait = new WebDriverWait(ThreadLocalDriver.getTLDriver(), 10);
         LoginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-       // splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
-       // tutorialScreen = new TutorialScreen(ThreadLocalDriver.getTLDriver());
-        //selectionScreen = new SelectionScreen(ThreadLocalDriver.getTLDriver());
-        //candidateMainScreen = new CandidateMainScreen(ThreadLocalDriver.getTLDriver());
+       // splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());       
 
         /*//Unlock the device if it is locked.
         final Runtime rt = Runtime.getRuntime();

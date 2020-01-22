@@ -2,6 +2,7 @@ package tests.cucumber.Runner;
 
 
 import java.io.File;
+import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -19,13 +20,28 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import tests.BaseTest;
+import utilities.check_mail;
+
+import java.util.Properties;
+
+import javax.activation.*;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 
 
 @CucumberOptions(
 		 monochrome = true,  
-        tags = "@Candidate",
-        features = "src/test/java/tests/cucumber/features/LoginCandidate.feature",
+        tags = "@login",
+        features = "src/test/java/tests/cucumber/features",
         glue = "tests.cucumber.steps",        
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/html/ExtentReport.html"}        		       
                 )
@@ -78,9 +94,15 @@ public class RunCucumberFeatures extends  BaseTest {
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {    	
     	System.out.println("afret class teardown...");
-        testNGCucumberRunner.finish();                
+        testNGCucumberRunner.finish();        
     }
     
+    @AfterSuite
+    public void suitteardown() throws InterruptedException {
+    	System.out.println("after suite teat down...");
+    	//Thread.sleep(9000);
+       // check_mail.Automail();	
+	}
     
+}//EOD class
 
-}

@@ -1,24 +1,18 @@
 package tests.cucumber.steps;
 
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import screens.LoginScreen;
-import screens.MyProfileScreen;
-import screens.PassCodeScreen;
-import screens.CandidateLoginScreen;
 import tests.ThreadLocalDriver;
 
 public class LoginSteps extends BaseSteps {
 
     //Instantiations
-    CandidateLoginScreen profileLoginScreen;
+    
     LoginScreen loginScreen;
-    PassCodeScreen passCodeScreen;
-    MyProfileScreen myProfileScreen;
+    //MyProfileScreen myProfileScreen;
 
     //Screen Classes Initialization
     @Before
@@ -26,9 +20,7 @@ public class LoginSteps extends BaseSteps {
         System.out.println("Cucumber Before-login-test-cucumber");
         setupCucumber();
        // profileLoginScreen = new CandidateLoginScreen(ThreadLocalDriver.getTLDriver());
-        loginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());
-        //passCodeScreen = new PassCodeScreen(ThreadLocalDriver.getTLDriver());
-        //myProfileScreen = new MyProfileScreen(ThreadLocalDriver.getTLDriver());
+        loginScreen = new LoginScreen(ThreadLocalDriver.getTLDriver());        
     }
 
    
