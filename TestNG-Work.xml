@@ -11,7 +11,7 @@
 	    </classes>
     </test> 
     
-     <test name="Huawei_Honor9Lite_Android_9.0.0">  			
+    <!-- <test name="Huawei_Honor9Lite_Android_9.0.0">  			
 		  <parameter name="type" value="phone"/>
 	      <parameter name="deviceName" value="Huawei_Honor9Lite_Android_9.0.0"/>
 	    <classes>
@@ -45,7 +45,7 @@
 	    </classes>
   </test>   
   
- <!-- <test name="Huawei_Mate9_Android_7.0.0">  			
+  <test name="Huawei_Mate9_Android_7.0.0">  			
 	  <parameter name="type" value="phone"/>
       <parameter name="deviceName" value="Huawei_Mate9_Android_7.0.0"/>
     <classes>

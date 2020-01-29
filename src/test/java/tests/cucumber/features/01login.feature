@@ -7,13 +7,13 @@ Scenario: Verify cross number error message
        And I enter "798311232" number
        Then Alert popup should be disaply as Please enter a valid Idea number
  
-@login
+#@login
 Scenario: Verify login functionality with blank text
 	When I am on login screen
      And I click on Enter Number textbox
      Then User should not able to login
      
-@login
+#@login
 Scenario: Verify if there is a cross icon available to erase the entered text
 	 When I am on login screen
      And I enter "8983112334" number

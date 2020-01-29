@@ -17,7 +17,8 @@ import io.appium.java_client.MobileElement;
 	    public static Map<String, String> envDictionary = new HashMap<String, String>();
 		public static String CurrentDirectory = System.getProperty("user.dir");;
 		public static String Url;
-		public static Properties TestData;				
+		public static Properties TestData;	
+		public static Properties Deviceinfo;
 		public static WebDriver Selenium;
 		public static AppiumDriver<MobileElement> Appium;
 		public static String PrivateFarmAndroid;
@@ -48,4 +49,6 @@ import io.appium.java_client.MobileElement;
 		public static int serviceExpiryDays;
 		public static String data_left; 
 		public static int highest_pack_validity;
+		public static String deviceName;
+		public static String applicationType="MOBILE ANDROID NATIVE";
 }

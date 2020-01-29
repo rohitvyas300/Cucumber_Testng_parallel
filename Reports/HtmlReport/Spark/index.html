@@ -58,7 +58,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jan 22, 2020 02:40:26 PM</span>
+                    <span class="badge badge-primary">Jan 29, 2020 12:49:34 PM</span>
                 </a>
             </li>
         </ul>
@@ -124,7 +124,7 @@
 	                                        
 	                                        
 	                                        
-	                                        
+	                                        <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
 	                                        <div class="dropdown-divider"></div>
                                             <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
                                         </ul>
@@ -151,8 +151,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">Login Screen</p> 
-                                                <p class="duration text-sm">0h 4m 55s+715ms</p> 
-                                                <span class="datetime">14:40:27 PM</span>
+                                                <p class="duration text-sm">0h 1m 19s+676ms</p> 
+                                                <span class="datetime">12:49:34 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -160,9 +160,9 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-fail">Login Screen</h5>
-                                                        <span class='badge badge-success'>01.22.2020 14:40:27</span>
-                                                        <span class='badge badge-danger'>01.22.2020 14:45:22</span>
-                                                        <span class='badge badge-default'>0h 4m 55s+715ms</span>
+                                                        <span class='badge badge-success'>01.29.2020 12:49:34</span>
+                                                        <span class='badge badge-danger'>01.29.2020 12:50:53</span>
+                                                        <span class='badge badge-default'>0h 1m 19s+676ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         Description: The purpose of this feature is to test the login functionality
@@ -197,43 +197,84 @@
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "798311232" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
 								<span class="alert-icon fail-bg">
 									<i class="fa fa-times text-white"></i>
 								</span>
-								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
+								<span>And I enter "798311232" number</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Please enter a valid Idea number!'] (tried for 30 second(s) with 500 milliseconds interval)
+				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: "//android.widget.EditText[@text='Enter your mobile number']"; (tried for 60 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at ✽.Alert popup should be disaply as Please enter a valid Idea number(src/test/java/tests/cucumber/features/01login.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:111)
+	at screens.BaseScreen.sendText(BaseScreen.java:119)
+	at screens.LoginScreen.enterPhoneNumber(LoginScreen.java:47)
+	at tests.cucumber.steps.LoginSteps.i_enter_number(LoginSteps.java:54)
+	at ?.I enter "798311232" number(src/test/java/tests/cucumber/features/01login.feature:7)
+Caused by: org.openqa.selenium.InvalidSelectorException: io.appium.uiautomator2.common.exceptions.InvalidSelectorException: java.lang.IllegalArgumentException: Unable to compile '"//android.widget.EditText[@text='Enter your mobile number']";'. See Cause.
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:203)
+	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:71)
+	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:104)
+	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:75)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.lang.IllegalArgumentException: Unable to compile '"//android.widget.EditText[@text='Enter your mobile number']";'. See Cause.
+	at org.jdom2.xpath.jaxen.JaxenCompiled.<init>(JaxenCompiled.java:152)
+	at org.jdom2.xpath.jaxen.JaxenXPathFactory.compile(JaxenXPathFactory.java:82)
+	at org.jdom2.xpath.XPathFactory.compile(XPathFactory.java:282)
+	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:201)
+	... 33 more
+Caused by: org.jaxen.XPathSyntaxException: Unexpected ';'
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:121)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:142)
+	at org.jdom2.xpath.jaxen.JaxenCompiled.<init>(JaxenCompiled.java:150)
+	... 36 more
+Caused by: class org.jaxen.saxpath.XPathSyntaxException: "//android.widget.EditText[@text='Enter your mobile number']";: 61: Unexpected ';'
+	at org.jaxen.saxpath.base.XPathReader.createSyntaxException(XPathReader.java:1085)
+	at org.jaxen.saxpath.base.XPathReader.parse(XPathReader.java:106)
+	at org.jaxen.BaseXPath.<init>(BaseXPath.java:116)
+	... 38 more
+
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Macs-MacBook-Pro.local', ip: '172.30.178.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_144'
+System info: host: 'DESKTOP-5I0JMPE', ip: '9.200.45.20', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, deviceName: 65, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Huawei_Honor9Lite_Android_9..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, platformName: Android, resetKeyboard: true, systemPort: 1034, udid: 9SF3Y18628006433, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: LLD-AL10, deviceName: 9SF3Y18628006433, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: 9SF3Y18628006433, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Huawei_Honor9Lite_Android_9..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 72, systemPort: 1034, takesScreenshot: true, udid: 9SF3Y18628006433, unicodeKeyboard: true, viewportRect: {height: 1960, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 035e956b-6ac5-41d6-919e-f743d6c89701
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Please enter a valid Idea number!']}
-	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+Capabilities {app: , appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, appWaitDuration: 15000, automationName: UiAutomator2, browserName: , databaseEnabled: false, desired: {app: , appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, appWaitDuration: 15000, automationName: UiAutomator2, browserName: , deviceName: Galaxy Note8, deviceReadyTimeout: 300, newCommandTimeout: 120, noReset: false, platformName: android, platformVersion: 9   , udid: ce071717b2b9e8bd0c7e}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-N950F, deviceName: ce071717b2b9e8bd0c7e, deviceReadyTimeout: 300, deviceScreenDensity: 420, deviceScreenSize: 1080x2220, deviceUDID: ce071717b2b9e8bd0c7e, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 120, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: ce071717b2b9e8bd0c7e, viewportRect: {height: 2031, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1134b086-eff9-4985-83a0-9fd0ffe19832
+*** Element info: {Using=xpath, value="//android.widget.EditText[@text='Enter your mobile number']";}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
@@ -256,14 +297,14 @@ Session ID: 035e956b-6ac5-41d6-919e-f743d6c89701
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
+	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:111)
+	at screens.BaseScreen.sendText(BaseScreen.java:119)
+	at screens.LoginScreen.enterPhoneNumber(LoginScreen.java:47)
+	at tests.cucumber.steps.LoginSteps.i_enter_number(LoginSteps.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at cucumber.runtime.Utils$1.call(Utils.java:26)
 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
 	at cucumber.runtime.Utils.invoke(Utils.java:20)
@@ -275,11 +316,11 @@ Session ID: 035e956b-6ac5-41d6-919e-f743d6c89701
 	at cucumber.runner.TestCase.run(TestCase.java:44)
 	at cucumber.runner.Runner.runPickle(Runner.java:40)
 	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
-	at tests.cucumber.Runner.RunCucumberFeatures.scenario(RunCucumberFeatures.java:75)
+	at tests.cucumber.Runner.RunCucumberFeatures.scenario(RunCucumberFeatures.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -292,844 +333,18 @@ Session ID: 035e956b-6ac5-41d6-919e-f743d6c89701
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
 	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify cross number error message</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "798311232" number</span>
-							</div>
-				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
 								</span>
 								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Please enter a valid Idea number!'] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at ✽.Alert popup should be disaply as Please enter a valid Idea number(src/test/java/tests/cucumber/features/01login.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Macs-MacBook-Pro.local', ip: '172.30.178.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, deviceName: 66, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Samsung_GalaxyJ7Prime_Andro..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, platformName: Android, resetKeyboard: true, systemPort: 1058, udid: 330041bbdf247419, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: samsung, deviceModel: SM-G610F, deviceName: 330041bbdf247419, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 330041bbdf247419, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Samsung_GalaxyJ7Prime_Andro..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 72, systemPort: 1058, takesScreenshot: true, udid: 330041bbdf247419, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: dff7b2f9-73a9-416e-94a0-2465a6a2a356
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Please enter a valid Idea number!']}
-	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
-	at tests.cucumber.Runner.RunCucumberFeatures.scenario(RunCucumberFeatures.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify cross number error message</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "798311232" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Macs-MacBook-Pro.local', ip: '172.30.178.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, deviceName: 69, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Xiaomi_RedmiY2_Android_8.1.0, pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, platformName: Android, resetKeyboard: true, systemPort: 1110, udid: 52449adb, unicodeKeyboard: true}, deviceApiLevel: 27, deviceManufacturer: Xiaomi, deviceModel: Redmi Y2, deviceName: 52449adb, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 52449adb, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Xiaomi_RedmiY2_Android_8.1.0, pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, resetKeyboard: true, statBarHeight: 48, systemPort: 1110, takesScreenshot: true, udid: 52449adb, unicodeKeyboard: true, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 5e587836-79f5-4580-bee1-3da6d6cbbbc7
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Please enter a valid Idea number!']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at ✽.Alert popup should be disaply as Please enter a valid Idea number(src/test/java/tests/cucumber/features/01login.feature:8)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify login functionality with blank text</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.iClickGirisYapButton()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I click on Enter Number textbox</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.user_should_not_able_to_login()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then User should not able to login</span>
-							</div>
-				<div class="details"></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify login functionality with blank text</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.iClickGirisYapButton()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I click on Enter Number textbox</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.user_should_not_able_to_login()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then User should not able to login</span>
-							</div>
-				<div class="details"></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "8983112334" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then User should click on cancel icon and verify textbox is empty</span>
-							</div>
-				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
-	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:72)
-	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "8983112334" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then User should click on cancel icon and verify textbox is empty</span>
-							</div>
-				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
-	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:72)
-	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify cross number error message</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "798311232" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Please enter a valid Idea number!'] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at ✽.Alert popup should be disaply as Please enter a valid Idea number(src/test/java/tests/cucumber/features/01login.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Macs-MacBook-Pro.local', ip: '172.30.178.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, deviceName: 72, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Samsung_GalaxyS10_Android_9..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, platformName: Android, resetKeyboard: true, systemPort: 1080, udid: RZ8M2173PEF, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-G973F, deviceName: RZ8M2173PEF, deviceScreenDensity: 420, deviceScreenSize: 1440x3040, deviceUDID: RZ8M2173PEF, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Samsung_GalaxyS10_Android_9..., pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 150, systemPort: 1080, takesScreenshot: true, udid: RZ8M2173PEF, unicodeKeyboard: true, viewportRect: {height: 2615, left: 0, top: 150, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 6712f4c2-2fa0-4317-8683-8d6a0abf419e
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Please enter a valid Idea number!']}
-	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
-	at tests.cucumber.Runner.RunCucumberFeatures.scenario(RunCucumberFeatures.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify cross number error message</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "798311232" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then Alert popup should be disaply as Please enter a valid Idea number</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Please enter a valid Idea number!'] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at ✽.Alert popup should be disaply as Please enter a valid Idea number(src/test/java/tests/cucumber/features/01login.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Macs-MacBook-Pro.local', ip: '172.30.178.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_144'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /home/radmin/build/raid-dat..., appActivity: com.ideacellular.myidea.Mai..., appPackage: com.ideacellular.myidea, automationName: UiAutomator2, deviceName: 88, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Huawei_Honor8X_Android_9.0.0, pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, platformName: Android, resetKeyboard: true, systemPort: 1095, udid: THC3Y18B29012322, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JSN-L42, deviceName: THC3Y18B29012322, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: THC3Y18B29012322, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: crysw3jb36jvdymyz7zq3gzk, pCloudy_ApplicationName: Android_debug_TestIP_Prod_0..., pCloudy_DeviceFullName: Huawei_Honor8X_Android_9.0.0, pCloudy_DurationInMinutes: 60, pCloudy_Username: rohitv@iprogrammer.com, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 85, systemPort: 1095, takesScreenshot: true, udid: THC3Y18B29012322, unicodeKeyboard: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 07949ccb-26d9-4512-84f3-17b21b649243
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Please enter a valid Idea number!']}
-	at sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at screens.BaseScreen.waitAndFindElement(BaseScreen.java:55)
-	at screens.BaseScreen.getText(BaseScreen.java:59)
-	at screens.LoginScreen.validIdeaNumberPopup(LoginScreen.java:78)
-	at tests.cucumber.steps.LoginSteps.alert_popup_should_be_disaply_as_Failure_in_Vodafone_system(LoginSteps.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
-	at cucumber.runner.TestStep.run(TestStep.java:49)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:44)
-	at cucumber.runner.Runner.runPickle(Runner.java:40)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
-	at tests.cucumber.Runner.RunCucumberFeatures.scenario(RunCucumberFeatures.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify login functionality with blank text</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.iClickGirisYapButton()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I click on Enter Number textbox</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.user_should_not_able_to_login()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then User should not able to login</span>
-							</div>
-				<div class="details"></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "8983112334" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then User should click on cancel icon and verify textbox is empty</span>
-							</div>
-				<div class="details"></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify login functionality with blank text</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.iClickGirisYapButton()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I click on Enter Number textbox</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.user_should_not_able_to_login()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then User should not able to login</span>
-							</div>
-				<div class="details"></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">Verify if there is a cross icon available to erase the entered text</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>LoginSteps.setupLoginSteps()</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.i_am_on_login_screen()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When I am on login screen</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.i_enter_number(String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And I enter "8983112334" number</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>Then User should click on cancel icon and verify textbox is empty</span>
-							</div>
-				<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at screens.LoginScreen.clickOnCancelIcon(LoginScreen.java:91)
-	at tests.cucumber.steps.LoginSteps.User_should_click_on_cancel_icon_and_verify_textbox_is_empty(LoginSteps.java:72)
-	at ✽.User should click on cancel icon and verify textbox is empty(src/test/java/tests/cucumber/features/01login.feature:20)
-</textarea>
+				<div class="details">Step skipped</div>
 					</div>
 				</div>
 	</div>

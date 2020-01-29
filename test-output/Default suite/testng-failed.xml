@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.cucumber.Runner.RunCucumberFeatures">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="BeforeSuit"/>
+          <include name="teardown"/>
+          <include name="suitteardown"/>
+          <include name="SwitchDriver"/>
+        </methods>
+      </class> <!-- tests.cucumber.Runner.RunCucumberFeatures -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

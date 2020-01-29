@@ -7,6 +7,7 @@ import java.util.Properties;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import tests.BaseTest;
+import utilities.PropReader;
 import utilities.check_mail;
 
 import java.util.Properties;
@@ -57,7 +59,11 @@ public class RunCucumberFeatures extends  BaseTest {
     public void setUpClass() {
         System.out.println("Cucumber Test Class Before");
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-    }
+        
+        }
+    
+    
+    
 
 //    @Test(groups = "cucumber", description = "Runs LoginCandiate Feature", dataProvider = "features")
 //    public void feature(CucumberFeatureWrapper cucumberFeature) {
@@ -91,6 +97,19 @@ public class RunCucumberFeatures extends  BaseTest {
 //        return testNGCucumberRunner.provideFeatures();
 //    }
 
+	
+	@BeforeSuite(alwaysRun = true)
+	public void BeforeSuit() throws Exception {
+
+		PropReader.LoadDeviceData();
+        System.out.println("Device data populated Sucess");
+        
+        PropReader.LoadObjectsRepository();
+        System.out.println("Object Repository prepopulated");
+    }
+	
+	
+	
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {    	
     	System.out.println("afret class teardown...");
